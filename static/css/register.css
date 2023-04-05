@@ -1,0 +1,14 @@
+body{
+    background-image: url(https://e0.pxfuel.com/wallpapers/641/202/desktop-wallpaper-baby-pink-background-ultra-background-for-light-pink-2048x1152.jpg);
+}
+.container{
+    background-color: rgb(241, 154, 183);
+    border: 1px solid black;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+h4{
+    margin-left: 200px;
+}

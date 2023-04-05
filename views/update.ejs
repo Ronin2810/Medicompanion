@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/website.css" />
+    <title>Update Profile</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/home"
+          ><img
+            src="https://www.clipartmax.com/png/middle/238-2386243_pills-comments-medicine-icon-png.png"
+            alt="image not loading"
+            id="pic"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/schemes">Schemes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/meds">Meds</a>
+            </li>
+            <li class="nav-item-logout">
+              <a href="/login" class="nav-link">Logout</a>
+            </li>
+            <li class="nav-item-profile">
+              <a href="/profile" class="nav-link active"
+                ><img
+                  src="https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
+                  id="pp"
+                  alt="na"
+                />
+                <%= profilename%></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <form action="/update1" method="post">
+        Full Name: <br />
+        <input type="text" name="fullname" id="fn" value="<%=name%>" /> <br />
+        Gender: <br />
+        <select name="r1" id="r1">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select
+        ><br />
+        Address: <br />
+        <input type="text" name="addr" id="addr" value="<%=addr%>" /> <br />
+        State: <br />
+        <input type="text" name="st" id="st" value="<%=st%>" /> <br />
+        City: <br />
+        <input type="text" name="ct" id="ct" value="<%=ct%>" /> <br />
+        Contact Number: <br />
+        <input type="number" name="pno" id="pno" value="<%=pno%>" /> <br />
+        Height (in cm): <br />
+        <input type="number" name="ht" id="ht" value="<%=ht%>" /> <br />
+        Weight (in kg): <br />
+        <input type="number" name="wt" id="wt" value="<%=wt%>" /> <br />
+        Blood Group: <br />
+        <select name="bgp" id="bgp">
+          <option value="O-">O-</option>
+          <option value="O+">O+</option>
+          <option value="A+">A-</option>
+          <option value="A-">A+</option>
+          <option value="B-">B-</option>
+          <option value="B+">B+</option>
+          <option value="AB-">AB-</option>
+          <option value="AB+">AB+</option></select
+        ><br />
+        Previous Medical History: <br />
+        <input type="text" name="pmh" id="pmh" value="<%=pmh%>" /><br />
+        Email address: <br />
+        <input
+          type="email"
+          name="emailreg"
+          id="email-reg"
+          value="<%=email%>"
+        /><br />
+        <br />
+        <a href="/pwd">Change Password</a><br />
+        <p><%= pass%></p>
+        <input type="submit" value="Update" />
+      </form>
+    </div>
+  </body>
+</html>

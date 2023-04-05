@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(241, 154, 183);
+}
+#pp {
+  height: 25px;
+  width: 25px;
+}
+.nav-item-logout {
+  margin-left: 1000px;
+  border: black 1px solid;
+  border-radius: 25px;
+  background-color: rgb(247, 75, 110);
+}
+/* .nav-item-profile {
+  /* margin-left: 1000px; */
+/* } */ 
+#pic {
+  height: 30px;
+  width: 30px;
+}
+
+.schemes-item{ 
+    height: 80px;
+    width: 500px;
+    border: 1px dashed black;
+    border-radius: 15px;
+}
+.scheme-text{
+  margin-left: 5px;
+}
+
+.meds-item{ 
+    height: 45px;
+    width: 500px;
+    border: 1px dashed black;
+    border-radius: 15px;
+}
+
+.carousel-item{
+  height: 500px
+}
+
+.img-carousel{
+  opacity: 0.2;
+}
+.blogs{
+  display: flex;
+}
+.card{
+  margin-left: 15px;
+}
+#c1{
+  width: 600px;
+  height: 200px;
+}

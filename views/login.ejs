@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/login.css"  type="text/css"/>
+
+    <title>Sign In</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+      <div class="container">
+      <h4>Login</h4><hr>
+        <form action="/home" method="post">
+          Enter your email address: <br />
+          <input type="email" name="emaillogin" id="email-login" /><br />
+          Enter your password: <br />
+          <input type="password" name="pwdlogin" id="pwd-login" /><br /><br />
+          <input type="submit" value="Sign In" />
+        </form>
+        <br />
+        <p style="color: red"><%= error1%></p>
+        <br />
+        Not registered yet ? goto <a href="/register">Register</a><br>
+        Forgot Password ? goto <a href="/otp">Change Password</a>
+      </div>
+
+  </body>
+</html>
